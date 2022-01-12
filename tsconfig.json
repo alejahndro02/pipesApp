@@ -18,6 +18,13 @@
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
+    "paths": {
+      "@primeNg/*":["src/app/prime-ng/*"],
+      "@shared/*":["src/app/shared/*"],
+      "@ventas/*":["src/app/ventas/*"],
+      "@assets/*":["src/assets/*"],
+      "@environments/*":["src/environments/*"],
+    },
     "lib": [
       "es2020",
       "dom"
