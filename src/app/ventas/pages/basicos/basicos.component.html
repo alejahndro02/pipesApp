@@ -1,1 +1,26 @@
-<p>basicos works!</p>
+<div class="text-layout">
+    <h1>Pipes Basicos</h1>
+    <p>Pipes personalizados incluidos en el commonModule</p>
+</div>
+<div class="grid text-layout">
+    <div class="col-4">
+        <p-card header="uperCase" [subheader]="nombreLower"> <!-- >En la propiedad [subheader]tambien se puede usar el pipe< -->
+            {{nombreLower | uppercase}}
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card header="lowerCase" [subheader]="nombreUpper">
+            {{nombreLower | lowercase}}
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card header="titleCase" [subheader]="nombreCompleto">
+            {{nombreCompleto | titlecase}}
+        </p-card>
+    </div>
+</div>
+
+
+
+
+
