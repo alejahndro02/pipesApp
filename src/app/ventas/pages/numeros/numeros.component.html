@@ -1,1 +1,12 @@
-<p>numeros works!</p>
+<div class="text-layout">
+    <h1>DecimalPipe y Porcentaje</h1>
+    <p>Pipe personalizados incluidos en el commonModule</p>
+</div>
+<div class="grid">
+    <div class="col-4">
+        <p-card header="ventasNetas" subheader="Del Año en curso">
+            <i class="pi pi-dollar"></i>
+            {{vantasNetas | number : '1.1-1':'ja'}}
+        </p-card>
+    </div>
+</div>
