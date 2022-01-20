@@ -1,5 +1,4 @@
 
-import spanishLanguajeMx from '@angular/common/locales/es-MX'
 import { registerLocaleData } from '@angular/common';
 
 import { LOCALE_ID, NgModule } from '@angular/core';
@@ -12,8 +11,13 @@ import { AppComponent } from './app.component';
 import { SharedModule } from '@shared/shared.module';
 import { VentasModule } from '@ventas/ventas.module';
 
+import spanishLanguajeMx from '@angular/common/locales/es-MX'
+import JapanLanguajeJp from '@angular/common/locales/ja'
+
 
 registerLocaleData(spanishLanguajeMx);
+registerLocaleData(JapanLanguajeJp);
+
 
 @NgModule({
   declarations: [
