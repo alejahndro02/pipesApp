@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./numeros.component.css']
 })
 export class NumerosComponent {
-  vantasNetas: number = 2993881662.29298166255;
+  vantasNetas: number = 29938810.292981;
   porcentaje: number = 0.48;
-      
 }
