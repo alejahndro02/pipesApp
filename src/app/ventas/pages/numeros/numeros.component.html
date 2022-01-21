@@ -9,4 +9,14 @@
             {{vantasNetas | number : '1.1-1':'ja'}}
         </p-card>
     </div>
+    <div class="col-4">
+        <p-card header="ventasBrutas" subheader="Del Año en curso">
+            {{vantasNetas | currency:'MXN':'symbol-narrow':'1.3-3'}}
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card header="Ganancia %" subheader="Del Año en curso">
+            {{ porcentaje | percent: '2.2-2'}}
+        </p-card>
+    </div>
 </div>
