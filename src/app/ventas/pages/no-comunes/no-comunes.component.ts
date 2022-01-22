@@ -41,4 +41,19 @@ export class NoComunesComponent implements OnInit {
     apellido: 'Hernández',
     edad:2
   }
+  //Jsonpipe
+  heroes =[
+    {
+      nombre:'Superman',
+      vuela: true
+    },
+    {
+      nombre:'Batman',
+      vuela: false
+    },
+    {
+      nombre:'acuaman',
+      vuela: false
+    }
+  ]
 }
