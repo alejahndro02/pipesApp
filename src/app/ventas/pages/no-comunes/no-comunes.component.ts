@@ -34,4 +34,11 @@ export class NoComunesComponent implements OnInit {
   borrarCleinte(){
     this.clientes.pop();
   }
+
+  //keyValuePipe
+  personas={
+    nombre:'Quetzalli',
+    apellido: 'Hernández',
+    edad:2
+  }
 }
