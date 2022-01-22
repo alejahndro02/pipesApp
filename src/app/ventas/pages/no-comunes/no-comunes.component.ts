@@ -22,6 +22,16 @@ export class NoComunesComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-
+  cambiarNombre(){
+    if(this.genero === 'femenino'){
+      this.nombre= 'Alejahndro'
+      this.genero= 'masculino'
+    }else{
+      this.nombre = 'Quetzalli'
+      this.genero ='femenino'
+    }
+  }
+  borrarCleinte(){
+    this.clientes.pop();
+  }
 }
