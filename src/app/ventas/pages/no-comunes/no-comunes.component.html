@@ -34,4 +34,11 @@
             <pre>{{clientes|slice:1:4}}</pre>
         </p-fieldset>
     </div>
+    <div class="col md-6 sm-9">
+        <p-fieldset legend="KeyValuePipe" [toggleable]="true">
+            <ul>
+                <li *ngFor="let item of personas | keyvalue"> {{item.key }} : {{item.value}} </li>
+            </ul>
+        </p-fieldset>
+    </div>
 </div>
