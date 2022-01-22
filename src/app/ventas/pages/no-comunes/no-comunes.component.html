@@ -21,5 +21,17 @@
             </div>
         </p-fieldset>
     </div>
-
+    <div class="col md-6 sm-9">
+        <p-fieldset legend="SlicePipe" [toggleable]="true">
+            <p>Corta el numero del arreglo o un string</p>
+            <b>Original</b>
+            <pre>{{clientes}}</pre>
+            <b>slice:0:2</b>
+            <pre>{{clientes|slice:0:2}}</pre>
+            <b>slice:0:4</b>
+            <pre>{{clientes|slice:0:4}}</pre>
+            <b>slice:1:5</b>
+            <pre>{{clientes|slice:1:4}}</pre>
+        </p-fieldset>
+    </div>
 </div>
