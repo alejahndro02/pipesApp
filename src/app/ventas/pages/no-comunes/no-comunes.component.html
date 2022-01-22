@@ -7,14 +7,19 @@
         <p-fieldset legend="I18nSelectPipe" [toggleable]="true">
             <p>Este pipe seleciona los valores de un objeto para poder mostrarlos en la vista y el resultado dependera de los valores del objeto</p>
             <p>Saludos {{nombre}} es un placer que forme parte de nuestro evento e {{genero | i18nSelect:mapGenero}} a nuestro palco</p>
-
+            <div class="flex justify-content-end flex-wrap card-container yellow-container">
+                <button pButton pRipple type="button" label="Cambiar Nombre" class="p-button-outlined p-button-rounded" (click)="cambiarNombre()"></button>
+            </div>
         </p-fieldset>
     </div>
     <div class="col md-6 sm-9">
         <p-fieldset legend="I18nPluralPipe" [toggleable]="true">
             <p>Este pipe seleciona los valores de un objeto para poder mostrarlos en la vista y el resultado dependera de los valores del objeto</p>
             <p>Actualmente {{clientes.length | i18nPlural:mapClientes}}</p>
-
+            <div class="flex justify-content-end flex-wrap card-container yellow-container">
+                <button pButton pRipple type="button" label="Borrar Cliente" class="p-button-outlined p-button-rounded" (click)="borrarCleinte()" ></button>
+            </div>
         </p-fieldset>
     </div>
+
 </div>
