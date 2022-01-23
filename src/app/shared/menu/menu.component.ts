@@ -32,16 +32,12 @@ export class MenuComponent implements OnInit {
             icon: 'pi pi-slack',
             routerLink:'no-comunes'
           },
-          {
-            label: 'Ordenar',
-            icon: 'pi pi-star',
-            routerLink:'ordenar'
-          }
         ]
       },
       {
         label: 'Pipes Personalizados',
         icon: 'pi pi-cog',
+        routerLink:'ordenar'
       }
   ];
   }
