@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from "@angular/core";
     name:'mayusculas'
 })
 export class MayusculasPipe implements PipeTransform{
-    transform(value: string):string {
-        return 'QUETZALLI';
+    transform(value: string, capitalizarPalabra: boolean):any {
+        return (capitalizarPalabra)?value.toUpperCase():value.toLowerCase();
     }
 }
