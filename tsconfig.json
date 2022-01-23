@@ -24,6 +24,8 @@
       "@ventas/*":["src/app/ventas/*"],
       "@assets/*":["src/assets/*"],
       "@environments/*":["src/environments/*"],
+      "@pipes/*":["src/app/ventas/pipes/*"],
+      "@interfaces/*":["src/app/ventas/interfaces/*"],
     },
     "lib": [
       "es2020",
