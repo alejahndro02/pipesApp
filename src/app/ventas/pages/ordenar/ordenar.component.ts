@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {  MayusculasPipe  } from '@pipes/mayusculas.pipe'
 
 @Component({
   selector: 'app-ordenar',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ordenar.component.css']
 })
 export class OrdenarComponent implements OnInit {
-
+capitalizarPalabra:boolean= false
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  capitalizar(){
+    this.capitalizarPalabra = !this.capitalizarPalabra
+  }
 }
