@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {  MayusculasPipe  } from '@pipes/mayusculas.pipe'
 
 @Component({
   selector: 'app-ordenar',
