@@ -1,4 +1,7 @@
 <div class="text-layout">
     <h1>Pipes Personalizados</h1>
-    <p>Pipes creado por {{ 'nosotros' | mayusculas}}</p>
+    <p>Pipe's creados por {{ 'quetzalli' | mayusculas:capitalizarPalabra}}</p>
+    <div>
+        <button (click)="capitalizar()" pButton pRipple type="button" label="Toggle Nombre" class="p-button-outlined p-button-rounded p-button-info"></button>
+    </div>
 </div>
