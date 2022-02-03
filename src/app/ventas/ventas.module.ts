@@ -6,6 +6,7 @@ import { NumerosComponent } from './pages/numeros/numeros.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 import { PrimeNgModule } from '@primeNg/prime-ng.module';
 import { MayusculasPipe } from '@pipes/mayusculas.pipe';
+import { OrdenarPipe } from './pipes/ordenar.pipe';
 import { PowerFly } from './pipes/vuela.pipe';
 
 
@@ -17,6 +18,7 @@ import { PowerFly } from './pipes/vuela.pipe';
     NumerosComponent,
     OrdenarComponent,
     MayusculasPipe,
+    OrdenarPipe,
     PowerFly
   ],
   exports:[
