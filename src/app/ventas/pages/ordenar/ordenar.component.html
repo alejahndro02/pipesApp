@@ -10,14 +10,14 @@
         <div class="p-toolbar-group-right">
             <button (click)="capitalizar()" pButton pRipple type="button" label="Toggle Nombre" class="p-button-outlined p-button-rounded p-button-info mr-2"></button>
             <button pButton label="Por Nombre" icon="pi pi-sort" class="mr-1"></button>
-            <button pButton label="Valores" icon="pi pi-sort" class="mr-1 p-button-info"></button>
+            <button pButton label="Vuela" icon="pi pi-sort" class="mr-1 p-button-info"></button>
             <button pButton label="Por Color" icon="pi pi-sort" class="mr-1 p-button-help"></button>
             
         </div>
     </p-toolbar>
     <div class="p-grid">
         <div class="p-col mt-3">
-            <p-table [value]="heroes" responsiveLayout="scroll">
+            <p-table [value]="heroes | ordenar" responsiveLayout="scroll">
                 <ng-template pTemplate="header">
                     <tr>
                         <th>Nombre</th>
