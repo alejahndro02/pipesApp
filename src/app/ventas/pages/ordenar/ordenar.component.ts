@@ -8,6 +8,7 @@ import { Color, Heroe } from '@ventas/interfaces/ventas.interface';
 })
 export class OrdenarComponent {
 capitalizarPalabra:boolean= false;
+ordenarPor:string =''
 heroes: Heroe [] =[
   {
     nombre: 'Superman',
@@ -34,5 +35,8 @@ heroes: Heroe [] =[
   capitalizar(){
     this.capitalizarPalabra = !this.capitalizarPalabra
   }
-  
+  ordenarChange(valor:string){
+    this.ordenarPor = valor;
+    
+  }
 }
