@@ -34,5 +34,5 @@ heroes: Heroe [] =[
   capitalizar(){
     this.capitalizarPalabra = !this.capitalizarPalabra
   }
-
+  
 }
