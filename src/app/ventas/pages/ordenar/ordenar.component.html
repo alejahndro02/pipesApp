@@ -17,7 +17,7 @@
     </p-toolbar>
     <div class="p-grid">
         <div class="p-col mt-3">
-            <p-table [value]="heroes | ordenar" responsiveLayout="scroll">
+            <p-table [value]="heroes | ordenar : 'nombre' " responsiveLayout="scroll">
                 <ng-template pTemplate="header">
                     <tr>
                         <th>Nombre</th>
